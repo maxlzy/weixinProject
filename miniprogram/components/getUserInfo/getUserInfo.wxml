@@ -1,0 +1,16 @@
+<!-- 遮罩层 -->
+<view class="getUserInfoClass">
+</view>
+<view class="getUserInfoMain">
+  <view class="mainText">
+   是否允许改小程序获取您的用户信息
+  </view>
+  <view>
+    <view>
+      取消
+    </view>
+    <view>
+      确认
+    </view>
+  </view>
+</view>

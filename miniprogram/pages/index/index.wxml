@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="main">
+  <navBar show-back="{{showBack}}" Title="首页"></navBar>
+  <view>
+    11111
+  </view>
+</view>
+<getInfo></getInfo>

@@ -1,0 +1,15 @@
+<!--components/navBar/navBar.wxml-->
+<view class="navBar" style="height: {{height+topHeight}}rpx;">
+  <view style="height: {{topHeight}}rpx;"></view>
+  <view class="navBarMain" style="height: {{height}}rpx;">
+    <view class="navBarBack" style=" border-color: {{backColor}}; margin-right: {{NavWidth-70}}rpx;" wx:if="{{showBack}}">
+    </view>
+    <view style=" margin-right: {{NavWidth-70}}rpx; width: 30rpx;" wx:if="{{!showBack}}">
+    </view>
+    <view>
+      <text>{{Title}}</text>
+    </view>
+    <view style="width: {{NavWidth}}rpx;height: 20px;">
+    </view>
+  </view>
+</view>
