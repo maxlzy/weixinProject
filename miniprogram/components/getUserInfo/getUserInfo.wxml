@@ -3,13 +3,13 @@
 </view>
 <view class="getUserInfoMain">
   <view class="mainText">
-   是否允许改小程序获取您的用户信息
+   是否允许该小程序获取您的用户信息
   </view>
-  <view>
-    <view>
+  <view class="textBottom">
+    <view class="textBottom_left">
       取消
     </view>
-    <view>
+    <view class="textBottom_right" bindtap="getUserInfo">
       确认
     </view>
   </view>

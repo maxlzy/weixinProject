@@ -5,4 +5,5 @@
     11111
   </view>
 </view>
+<!-- 获取用户权限 -->
 <getInfo></getInfo>
