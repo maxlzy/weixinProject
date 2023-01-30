@@ -20,15 +20,16 @@ Component({
    */
   methods: {
     getUserInfo() {
-      console.log("1111")
-      wx.login({
+      wx.getUserProfile({
+        lang: 'zh_CN',
+        desc: '允许该小程序获取您的用户信息',
         success: (res) => {
+          appData.globalData.CusUserInfo=res.userInfo
+          this.triggerEvent('showGetInfo',{infoFlag:false})
+        },
+        fail:(res)=>{
           console.log(res)
-          wx.getUserInfo({
-            success: (res) => {
-              console.log(res)
-            }
-          })
+          appData.toast("授权失败")
         }
       })
     }

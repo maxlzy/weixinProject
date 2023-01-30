@@ -9,5 +9,6 @@ interface IAppOption {
     NavWidth?:Number,
   }
   NarBarHeight?:any,
+  toast?:any,
   userInfoReadyCallback?: WechatMiniprogram.GetUserInfoSuccessCallback,
 }

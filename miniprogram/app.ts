@@ -32,5 +32,12 @@ App<IAppOption>({
     console.log(BarMessage)
     this.globalData.height=((rightButton.top-BarMessage.statusBarHeight)*2+rightButton.height)*2
     this.globalData.NavWidth=(rightButton.width+(BarMessage.windowWidth-rightButton.right))*2
+  },
+  toast(msg: any,time: any){
+    wx.showToast({
+      title:msg,
+      icon:'none',
+      duration:time||2000
+    })
   }
 })

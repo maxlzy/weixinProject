@@ -2,8 +2,10 @@
 <view class="main">
   <navBar show-back="{{showBack}}" Title="首页"></navBar>
   <view>
-    11111
+    <view>
+      {{userInfo.nickName||'微信用户'}}
+    </view>
   </view>
 </view>
 <!-- 获取用户权限 -->
-<getInfo></getInfo>
+<getInfo wx:if="{{infoFlag}}" bind:showGetInfo="showGetInfo"></getInfo>
