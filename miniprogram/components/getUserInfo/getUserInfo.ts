@@ -32,6 +32,9 @@ Component({
           appData.toast("授权失败")
         }
       })
+    },
+    goBack(){
+      this.triggerEvent('noInfo')
     }
   }
 })

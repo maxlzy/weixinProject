@@ -1,12 +1,12 @@
 <!-- 遮罩层 -->
-<view class="getUserInfoClass">
+<view class="getUserInfoClass"  bindtap="goBack">
 </view>
 <view class="getUserInfoMain">
   <view class="mainText">
    是否允许该小程序获取您的用户信息
   </view>
   <view class="textBottom">
-    <view class="textBottom_left">
+    <view class="textBottom_left" bindtap="goBack">
       取消
     </view>
     <buttom class="textBottom_right" bindtap="getUserInfo">

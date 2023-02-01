@@ -1,11 +1,18 @@
 <!--index.wxml-->
 <view class="main">
   <navBar show-back="{{showBack}}" Title="首页"></navBar>
-  <view>
-    <view>
+  <view class="mainMessage">
+    <view class="customerPhoto">
+      <image wx:if="{{!!userInfo.avatarUrl}}" src="{{userInfo.avatarUrl}}" mode="" />
+      <image wx:else="" src="../../assests/image/hidePhoto.jpeg" mode=""/>
+    </view>
+    <view class="customerName">
       {{userInfo.nickName||'微信用户'}}
+    </view>
+    <view class="mainBottom" bindtap="goPre">
+      开始体验
     </view>
   </view>
 </view>
 <!-- 获取用户权限 -->
-<getInfo wx:if="{{infoFlag}}" bind:showGetInfo="showGetInfo"></getInfo>
+<getInfo wx:if="{{infoFlag}}" bind:showGetInfo="showGetInfo" bind:noInfo="noInfo"></getInfo>
